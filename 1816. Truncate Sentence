@@ -1,0 +1,14 @@
+Input: s = "Hello how are you Contestant", k = 4
+Output: "Hello how are you"
+
+
+
+
+
+class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+        s=s.split()
+        p=""
+        for i in range(k):
+            p=p+s[i]+' '
+        return(p[:len(p)-1])    
