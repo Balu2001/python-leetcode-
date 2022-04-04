@@ -1,0 +1,23 @@
+Example 1:
+
+Input: haystack = "hello", needle = "ll"
+Output: 2
+Example 2:
+
+Input: haystack = "aaaaa", needle = "bba"
+Output: -1
+
+
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        i=0
+        j=len(needle)
+        while(j<=len(haystack)):
+            if haystack[i:j]==needle:
+                return i
+            else:
+                i+=1
+                j+=1
+        else:
+            return -1
+            
